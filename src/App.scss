@@ -1,0 +1,22 @@
+$background-color: #161616;
+$primary-color: #e94560;
+$secondary-color: #0f3461;
+
+.App {
+  height: 100vh;
+  width: 100;
+  background-color: $background-color;
+  display: flexbox;
+}
+
+.primTest {
+  width: 2cm;
+  height: 2cm;
+  background-color: $primary-color;
+}
+
+.secondTest {
+  width: 2cm;
+  height: 2cm;
+  background-color: $secondary-color;
+}

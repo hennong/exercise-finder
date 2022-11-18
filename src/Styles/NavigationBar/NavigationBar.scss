@@ -1,0 +1,21 @@
+$background-NavigationBar: #232323;
+$primary-color: #e94560;
+$secondary-color: #0f3461;
+
+.NavbarBaselayer {
+  background-color: $background-NavigationBar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 96px;
+  height: 10vh;
+  width: 100vw;
+  box-shadow: 0px 2px 5px #171717;
+}
+
+.Items {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
