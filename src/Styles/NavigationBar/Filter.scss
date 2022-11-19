@@ -1,0 +1,20 @@
+$background-NavigationBar: #5a5959;
+$primary-color: #e94560;
+$secondary-color: #154d92;
+
+.Filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 86px;
+  width: auto;
+  height: 100%;
+}
+
+.Button {
+  display: flex;
+  align-content: stretch;
+  height: 40px;
+  background-color: $background-NavigationBar;
+  border-radius: 20px;
+}
