@@ -9,7 +9,7 @@ export const SearchBar: React.FC = () => {
       <div className="SearchBar">
         <InputBase className="InputBase" style={{ color: "white" }} />
         <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
-        <IconButton type="button" aria-label="search">
+        <IconButton type="button" aria-label="search" color="primary">
           <SearchIcon />
         </IconButton>
       </div>
