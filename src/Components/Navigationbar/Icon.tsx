@@ -1,4 +1,4 @@
-import dumbbell from "../../Icons/icons8-dumbbell-windows-10-96.png"
+import dumbbell from "../../Icons/dumbbell-96.png"
 import "../../Styles/NavigationBar/Icon.scss"
 
 export const Icon: React.FC = () => {
