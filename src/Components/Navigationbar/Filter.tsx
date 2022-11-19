@@ -6,7 +6,7 @@ export const Filter = () => {
   return (
     <div className="Filter">
       <div className="Button">
-        <Button color="primary">
+        <Button color="primary" sx={{ borderRadius: 20 }}>
           <TuneIcon />
         </Button>
       </div>
