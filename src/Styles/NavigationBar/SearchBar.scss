@@ -9,13 +9,13 @@ $secondary-color: #184d8e;
   justify-content: center;
   height: 100%;
   width: 100%;
-  margin-right: 10px;
+  padding-right: 10px;
 }
 
 .SearchBar {
   display: flex;
   background-color: $background-SearchBar;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 2px 5px #171717;
   width: 1000px;
   padding-left: 5px;
