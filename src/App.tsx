@@ -1,24 +1,18 @@
-import { createTheme, ThemeProvider } from "@mui/material"
+import { ThemeProvider } from "@mui/material"
+import { Provider } from "react-redux"
 import "./App.scss"
 import { NavigationBar } from "./Components/Navigationbar/NavigationBar"
+import { store } from "./Store/Store"
+import { theme } from "./Types/Theme/Theme"
 
 function App() {
-  const theme = createTheme({
-    palette: {
-      primary: {
-        main: "#e94560"
-      },
-      secondary: {
-        main: "#4999fa"
-      }
-    }
-  })
-
   return (
     <div className="App">
-      <ThemeProvider theme={theme}>
-        <NavigationBar />
-      </ThemeProvider>
+      <Provider store={store}>
+        <ThemeProvider theme={theme}>
+          <NavigationBar />
+        </ThemeProvider>
+      </Provider>
     </div>
   )
 }
