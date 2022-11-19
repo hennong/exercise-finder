@@ -14,9 +14,9 @@ const baseOptions: ExerciseRequest = {
   }
 }
 
-export const getExercises = (
+export const getExercisesFromAPI = (
   searchParameters: ExerciseParameters
-): Exercise[] | null => {
+): Exercise[] | undefined => {
   const options: ExerciseRequest = {
     ...baseOptions,
     params: searchParameters
@@ -32,5 +32,5 @@ export const getExercises = (
       console.log(error)
     })
 
-  return null
+  return undefined
 }

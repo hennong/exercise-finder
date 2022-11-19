@@ -1,12 +1,18 @@
 export interface Exercise {
   name: string
-  type: Type
+  type: ExerciseType
   muscle: Muscle
   difficulty: Difficulty
   instructions: string
 }
 
-export enum Type {
+export interface ExerciseOptions {
+  type?: ExerciseType
+  muscle?: Muscle
+  difficulty?: Difficulty
+}
+
+export enum ExerciseType {
   Cardio = "cardio",
   OlympicWeightlifting = "olympic_weightlifting",
   Plyometrics = "plyometrics",

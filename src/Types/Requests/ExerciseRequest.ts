@@ -1,5 +1,4 @@
-import { Type } from "typescript"
-import { Difficulty, Muscle } from "../Exercise/Exercise"
+import { Difficulty, ExerciseType, Muscle } from "../Exercise/Exercise"
 
 export interface ExerciseRequest {
   url: string
@@ -11,7 +10,7 @@ export interface ExerciseRequest {
 
 export interface ExerciseParameters {
   name: string
-  type?: Type
+  type?: ExerciseType
   muscle?: Muscle
   difficukty?: Difficulty
 }
