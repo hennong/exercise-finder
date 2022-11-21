@@ -16,7 +16,7 @@ const baseOptions: ExerciseRequest = {
 
 export const getExercisesFromAPI = (
   searchParameters: ExerciseParameters
-): Exercise[] | undefined => {
+): Exercise[] | null => {
   const options: ExerciseRequest = {
     ...baseOptions,
     params: searchParameters
@@ -25,12 +25,9 @@ export const getExercisesFromAPI = (
   axios
     .request(options)
     .then(function (response) {
-      console.log(response.data)
       return response.data
     })
-    .catch(function (error) {
-      console.log(error)
-    })
+    .catch(function (error) {})
 
-  return undefined
+  return null
 }

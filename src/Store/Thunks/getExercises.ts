@@ -19,8 +19,10 @@ export const getExercises = (): StoreThunk<Promise<void>> => {
         getExercisesFromAPI(exerciseParameters) ?? []
 
       dispatch(exerciseActions.setExercises(exercises))
+
+      return Promise.resolve()
     } catch (error) {
-      console.log(error)
+      return Promise.reject()
     }
   }
 }
