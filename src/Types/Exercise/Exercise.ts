@@ -2,6 +2,7 @@ export interface Exercise {
   name: string
   type: ExerciseType
   muscle: Muscle
+  equipment: string
   difficulty: Difficulty
   instructions: string
 }
