@@ -1,0 +1,58 @@
+$primary-color: #e94560;
+$background-color: #292929;
+.TileBackground {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  width: 480px;
+  margin: 20px;
+  border-radius: 10px;
+  height: 200px;
+  box-shadow: 0px 2px 5px #000000;
+  color: white;
+}
+
+.Title {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  background-color: $primary-color;
+  padding: 5px;
+  border-bottom-style: solid;
+  border-color: rgb(165, 41, 41);
+  border-bottom-width: 1px;
+}
+.Name {
+  font-size: 24px;
+  font-weight: bold;
+  height: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.Info {
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Instructions {
+  font-size: 15px;
+  width: 470px;
+  height: 120px;
+  border-bottom-right-radius: 10;
+  border-bottom-left-radius: 10;
+  padding: 5px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6;
+}
