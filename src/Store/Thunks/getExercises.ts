@@ -14,9 +14,8 @@ export const getExercises = (): StoreThunk<Promise<void>> => {
         name: query,
         ...parameters
       }
-
       const exercises: Exercise[] =
-        getExercisesFromAPI(exerciseParameters) ?? []
+        (await getExercisesFromAPI(exerciseParameters)) ?? []
 
       dispatch(exerciseActions.setExercises(exercises))
 

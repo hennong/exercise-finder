@@ -14,20 +14,20 @@ const baseOptions: ExerciseRequest = {
   }
 }
 
-export const getExercisesFromAPI = (
+export const getExercisesFromAPI = async (
   searchParameters: ExerciseParameters
-): Exercise[] | null => {
+): Promise<Exercise[]> => {
   const options: ExerciseRequest = {
     ...baseOptions,
     params: searchParameters
   }
 
-  axios
+  const exercises = await axios
     .request(options)
-    .then(function (response) {
-      return response.data
+    .then((response) => response.data)
+    .catch(function (error) {
+      return []
     })
-    .catch(function (error) {})
 
-  return null
+  return exercises
 }
