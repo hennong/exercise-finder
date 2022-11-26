@@ -24,7 +24,7 @@ export const ExerciseView: React.FC<IExerciseView> = (props) => {
             <ArrowBackIosNewIcon color="secondary" />
           </IconButton>
         </div>
-        <div className="ExerciseTitle">{exercise.name}</div>
+        <div className="ExerciseTitle">{exercise.name.toUpperCase()}</div>
       </div>
       <div className="ExerciseInfo">
         <div className="ExerciseDetails">Exercise Type: {exercise.type}</div>
