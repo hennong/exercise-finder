@@ -1,6 +1,7 @@
 $primary-color: #e94560;
-$background-color: #292929;
-.TileBackground {
+$background-color: #323232;
+
+.Tile {
   display: flex;
   flex-direction: column;
   background-color: $background-color;
@@ -21,9 +22,10 @@ $background-color: #292929;
   background-color: $primary-color;
   padding: 5px;
   border-bottom-style: solid;
-  border-color: rgb(165, 41, 41);
+  border-color: #a52929;
   border-bottom-width: 1px;
 }
+
 .Name {
   font-size: 24px;
   font-weight: bold;
