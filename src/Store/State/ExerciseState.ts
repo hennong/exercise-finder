@@ -3,10 +3,12 @@ import { Exercise } from "../../Types/Exercise/Exercise"
 
 interface ExerciseState {
   exercises: Exercise[]
+  exercise: Exercise | null
 }
 
 const initialState: ExerciseState = {
-  exercises: []
+  exercises: [],
+  exercise: null
 }
 
 const exerciseSlice = createSlice({
@@ -18,6 +20,12 @@ const exerciseSlice = createSlice({
       action: PayloadAction<Exercise[]>
     ): void => {
       state.exercises = action.payload
+    },
+    setExercise: (
+      state: ExerciseState,
+      action: PayloadAction<Exercise | null>
+    ): void => {
+      state.exercise = action.payload
     }
   }
 })

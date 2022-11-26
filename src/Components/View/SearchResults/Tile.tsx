@@ -1,4 +1,6 @@
 import { getExerciseTypeName, getMuscleName } from "../../../Helper/NameHelper"
+import { exerciseActions } from "../../../Store/State/ExerciseState"
+import { useDispatch } from "../../../Store/Store"
 import "../../../Styles/View/SearchResults/Tile.scss"
 import { Exercise } from "../../../Types/Exercise/Exercise"
 export interface ITile {
@@ -7,8 +9,13 @@ export interface ITile {
 
 export const Tile: React.FC<ITile> = (props) => {
   const exercise = props.exercise
+  const dispatch = useDispatch()
+  const onClick = () => {
+    dispatch(exerciseActions.setExercise(exercise))
+  }
+
   return (
-    <div className="TileBackground">
+    <div className="Tile" onClick={onClick}>
       <div className="Title">
         <div className="Name">{exercise.name.toUpperCase()}</div>
         <div className="Info">
