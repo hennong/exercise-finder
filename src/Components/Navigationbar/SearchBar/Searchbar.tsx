@@ -16,19 +16,19 @@ export const SearchBar: React.FC = () => {
     dispatch(searchActions.setQuery(event.target.value))
   }
 
-  const onKeyUp = (
+  const onKeyDown = (
     event: React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     if (event.key === "Enter") {
-      onClickSearch()
+      onSearch()
     }
   }
 
-  const onClickDelete = () => {
+  const onDelete = () => {
     dispatch(searchActions.setQuery(""))
   }
 
-  const onClickSearch = () => {
+  const onSearch = () => {
     dispatch(getExercises())
     dispatch(exerciseActions.setExercise(null))
   }
@@ -41,13 +41,13 @@ export const SearchBar: React.FC = () => {
           style={{ color: "white" }}
           onChange={onChange}
           value={value}
-          onKeyUp={onKeyUp}
+          onKeyDown={onKeyDown}
         />
         <IconButton
           type="button"
           aria-label="close"
           color="primary"
-          onClick={onClickDelete}
+          onClick={onDelete}
         >
           <CloseIcon />
         </IconButton>
@@ -56,7 +56,7 @@ export const SearchBar: React.FC = () => {
           type="button"
           aria-label="search"
           color="primary"
-          onClick={onClickSearch}
+          onClick={onSearch}
         >
           <SearchIcon />
         </IconButton>
