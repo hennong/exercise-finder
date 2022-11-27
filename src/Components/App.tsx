@@ -1,10 +1,10 @@
 import { ThemeProvider } from "@mui/material"
 import { Provider } from "react-redux"
+import { NavigationBar } from "../Components/Navigationbar/NavigationBar"
+import { View } from "../Components/View/View"
+import { store } from "../Store/Store"
+import { theme } from "../Types/Theme/Theme"
 import "./App.scss"
-import { NavigationBar } from "./Components/Navigationbar/NavigationBar"
-import { View } from "./Components/View/View"
-import { store } from "./Store/Store"
-import { theme } from "./Types/Theme/Theme"
 
 function App() {
   return (

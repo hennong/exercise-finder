@@ -1,7 +1,7 @@
 import { useSelector } from "../../Store/Store"
-import "../../Styles/View/View.scss"
 import { ExerciseView } from "./Exercise/Exercise"
 import { SearchResult } from "./SearchResults/SearchResults"
+import "./View.scss"
 
 export const View = () => {
   const exercise = useSelector((state) => state.exercise.exercise)

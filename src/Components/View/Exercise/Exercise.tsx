@@ -2,7 +2,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew"
 import { IconButton } from "@mui/material"
 import { useDispatch } from "react-redux"
 import { exerciseActions } from "../../../Store/State/ExerciseState"
-import "../../../Styles/View/Exercise/Exercise.scss"
+import "./Exercise.scss"
 import { Exercise } from "../../../Types/Exercise/Exercise"
 
 export interface IExerciseView {

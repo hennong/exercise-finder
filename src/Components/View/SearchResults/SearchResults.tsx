@@ -1,5 +1,5 @@
 import { useSelector } from "../../../Store/Store"
-import "../../../Styles/View/SearchResults/SearchResults.scss"
+import "./SearchResults.scss"
 import { Tile } from "./Tile"
 
 export const SearchResult = () => {

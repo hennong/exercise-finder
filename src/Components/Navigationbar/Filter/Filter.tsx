@@ -1,6 +1,6 @@
 import TuneIcon from "@mui/icons-material/Tune"
 import Button from "@mui/material/Button"
-import "../../Styles/NavigationBar/Filter.scss"
+import "./Filter.scss"
 
 export const Filter = () => {
   return (

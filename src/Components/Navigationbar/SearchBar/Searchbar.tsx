@@ -2,11 +2,11 @@ import CloseIcon from "@mui/icons-material/Close"
 import SearchIcon from "@mui/icons-material/Search"
 import { Divider, IconButton, InputBase } from "@mui/material"
 import * as React from "react"
-import { exerciseActions } from "../../Store/State/ExerciseState"
-import { searchActions } from "../../Store/State/SearchState"
-import { useDispatch, useSelector } from "../../Store/Store"
-import { getExercises } from "../../Store/Thunks/getExercises"
-import "../../Styles/NavigationBar/SearchBar.scss"
+import { exerciseActions } from "../../../Store/State/ExerciseState"
+import { searchActions } from "../../../Store/State/SearchState"
+import { useDispatch, useSelector } from "../../../Store/Store"
+import { getExercises } from "../../../Store/Thunks/getExercises"
+import "./SearchBar.scss"
 
 export const SearchBar: React.FC = () => {
   const dispatch = useDispatch()

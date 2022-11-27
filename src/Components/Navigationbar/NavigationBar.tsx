@@ -1,7 +1,7 @@
-import "../../Styles/NavigationBar/NavigationBar.scss"
-import { Filter } from "./Filter"
-import { Icon } from "./Icon"
-import { SearchBar } from "./Searchbar"
+import { Filter } from "./Filter/Filter"
+import { Icon } from "./Icon/Icon"
+import "./NavigationBar.scss"
+import { SearchBar } from "./SearchBar/Searchbar"
 
 export const NavigationBar: React.FC = () => {
   return (

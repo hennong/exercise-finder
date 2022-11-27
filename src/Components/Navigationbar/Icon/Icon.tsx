@@ -1,5 +1,5 @@
-import dumbbell from "../../Icons/dumbbell-96.png"
-import "../../Styles/NavigationBar/Icon.scss"
+import dumbbell from "../../../Icons/dumbbell-96.png"
+import "./Icon.scss"
 
 export const Icon: React.FC = () => {
   return (
