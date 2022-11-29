@@ -1,4 +1,4 @@
-import { getExercisesFromAPI } from "../../Requests/Exercises/Exercises"
+import { getExercises as getExercisesFromAPI } from "../../Requests/RequestExercises"
 import { Exercise } from "../../Types/Exercise/Exercise"
 import { ExerciseParameters } from "../../Types/Requests/ExerciseRequest"
 import { exerciseActions } from "../State/ExerciseState"
