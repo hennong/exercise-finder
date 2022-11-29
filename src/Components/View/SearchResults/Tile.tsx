@@ -20,7 +20,7 @@ export const Tile: React.FC<ITile> = (props) => {
         <div className="Name">{exercise.name.toUpperCase()}</div>
         <div className="Info">
           {`${getMuscleName(exercise.muscle)} - 
-          ${getExerciseTypeName(exercise.type)}`}
+          ${getExerciseTypeName(exercise.exerciseType)}`}
         </div>
       </div>
       <div className="Instructions">{exercise.instructions}</div>
