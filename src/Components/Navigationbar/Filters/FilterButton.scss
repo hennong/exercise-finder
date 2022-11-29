@@ -2,7 +2,7 @@ $background-NavigationBar: #5a5959;
 $primary-color: #e94560;
 $secondary-color: #154d92;
 
-.Filter {
+.FilterButtonBackground {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@ $secondary-color: #154d92;
   height: 100%;
 }
 
-.Button {
+.FilterButton {
   display: flex;
   align-content: stretch;
   height: 40px;

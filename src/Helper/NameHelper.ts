@@ -1,4 +1,6 @@
-import { Difficulty, ExerciseType, Muscle } from "../Types/Exercise/Exercise"
+import { Difficulty } from "../Types/Exercise/Difficulty"
+import { ExerciseType } from "../Types/Exercise/ExerciseType"
+import { Muscle } from "../Types/Exercise/Muscle"
 
 export const getExerciseTypeName = (name: ExerciseType) => {
   switch (name) {
@@ -71,4 +73,20 @@ export const getDifficultyName = (name: Difficulty) => {
     default:
       return "not rated difficulty"
   }
+}
+
+export const getTypeName = (filter: ExerciseType | Muscle | Difficulty) => {
+  if (filter in ExerciseType) {
+    return getExerciseTypeName(filter as ExerciseType)
+  }
+
+  if (filter in Muscle) {
+    return getMuscleName(filter as Muscle)
+  }
+
+  if (filter in Muscle) {
+    return getDifficultyName(filter as Difficulty)
+  }
+
+  return filter
 }

@@ -1,6 +1,10 @@
+import { Difficulty } from "./Difficulty"
+import { ExerciseType } from "./ExerciseType"
+import { Muscle } from "./Muscle"
+
 export interface Exercise {
   name: string
-  type: ExerciseType
+  exerciseType: ExerciseType
   muscle: Muscle
   equipment: string
   difficulty: Difficulty
@@ -8,42 +12,7 @@ export interface Exercise {
 }
 
 export interface ExerciseOptions {
-  type?: ExerciseType
-  muscle?: Muscle
-  difficulty?: Difficulty
-}
-
-export enum ExerciseType {
-  Cardio = "cardio",
-  OlympicWeightlifting = "olympic_weightlifting",
-  Plyometrics = "plyometrics",
-  Powerlifting = "powerlifting",
-  Strength = "strength",
-  Stretching = "stretching",
-  Strongman = "strongman"
-}
-
-export enum Muscle {
-  Abdominals = "abdominals",
-  Abductors = "abductors",
-  Adductors = "adductors",
-  Biceps = "biceps",
-  Calves = "calves",
-  Chest = "chest",
-  Forearms = "forearms",
-  Glutes = "glutes",
-  Hamstrings = "hamstrings",
-  Lats = "lats",
-  LowerBack = "lower_back",
-  MiddleBack = "middle_back",
-  Neck = "neck",
-  Quadriceps = "quadriceps",
-  Traps = "traps",
-  Triceps = "triceps"
-}
-
-export enum Difficulty {
-  Beginner = "beginner",
-  Intermediate = "intermediate",
-  Expert = "expert"
+  exerciseType?: ExerciseType | null
+  muscle?: Muscle | null
+  difficulty?: Difficulty | null
 }
