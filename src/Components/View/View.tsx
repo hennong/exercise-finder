@@ -1,5 +1,5 @@
 import { useSelector } from "../../Store/Store"
-import { ExerciseView } from "./Exercise/Exercise"
+import { ExerciseView } from "./Exercise/ExerciseView"
 import { SearchResult } from "./SearchResults/SearchResults"
 import "./View.scss"
 
