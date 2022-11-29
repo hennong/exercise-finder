@@ -1,13 +1,11 @@
 import { Button } from "@mui/material"
 import { getTypeName } from "../../../../Helper/NameHelper"
-import { Difficulty } from "../../../../Types/Exercise/Difficulty"
-import { ExerciseType } from "../../../../Types/Exercise/ExerciseType"
-import { Muscle } from "../../../../Types/Exercise/Muscle"
+import { ExerciseFilter } from "../../../../Types/Exercise/Exercise"
 
 export interface IFiltersButton {
-  filter: ExerciseType | Muscle | Difficulty
+  filter: ExerciseFilter
   isActive: boolean
-  setParameter: (value: ExerciseType | Muscle | Difficulty) => void
+  setParameter: (value: ExerciseFilter) => void
 }
 
 export const FiltersButton: React.FC<IFiltersButton> = (props) => {

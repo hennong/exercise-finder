@@ -1,4 +1,5 @@
 import { Difficulty } from "../Types/Exercise/Difficulty"
+import { ExerciseFilter } from "../Types/Exercise/Exercise"
 import { ExerciseType } from "../Types/Exercise/ExerciseType"
 import { Muscle } from "../Types/Exercise/Muscle"
 
@@ -75,7 +76,7 @@ export const getDifficultyName = (name: Difficulty) => {
   }
 }
 
-export const getTypeName = (filter: ExerciseType | Muscle | Difficulty) => {
+export const getTypeName = (filter: ExerciseFilter) => {
   if (filter in ExerciseType) {
     return getExerciseTypeName(filter as ExerciseType)
   }

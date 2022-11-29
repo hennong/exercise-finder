@@ -1,6 +1,7 @@
 import { searchActions } from "../../../Store/State/SearchState"
 import { useDispatch, useSelector } from "../../../Store/Store"
 import { difficulties, Difficulty } from "../../../Types/Exercise/Difficulty"
+import { ExerciseFilter } from "../../../Types/Exercise/Exercise"
 import {
   ExerciseType,
   exerciseTypes
@@ -16,7 +17,7 @@ export const Filters = () => {
 
   const dispatch = useDispatch()
 
-  const isFilterActive = (value: ExerciseType | Muscle | Difficulty) => {
+  const isFilterActive = (value: ExerciseFilter) => {
     if (exerciseTypes.includes(value as ExerciseType)) {
       return exerciseType === value
     }
@@ -32,7 +33,7 @@ export const Filters = () => {
     return false
   }
 
-  const setParameter = (filter: ExerciseType | Muscle | Difficulty) => {
+  const setParameter = (filter: ExerciseFilter) => {
     const value = isFilterActive(filter) ? null : filter
 
     if (exerciseTypes.includes(filter as ExerciseType)) {

@@ -16,3 +16,5 @@ export interface ExerciseOptions {
   muscle?: Muscle | null
   difficulty?: Difficulty | null
 }
+
+export type ExerciseFilter = ExerciseType | Muscle | Difficulty
