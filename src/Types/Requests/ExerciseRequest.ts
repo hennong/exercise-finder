@@ -1,4 +1,6 @@
-import { Difficulty, ExerciseType, Muscle } from "../Exercise/Exercise"
+import { Difficulty } from "../Exercise/Difficulty"
+import { ExerciseType } from "../Exercise/ExerciseType"
+import { Muscle } from "../Exercise/Muscle"
 
 export interface ExerciseRequest {
   url: string
@@ -10,7 +12,7 @@ export interface ExerciseRequest {
 
 export interface ExerciseParameters {
   name: string
-  type?: ExerciseType
-  muscle?: Muscle
-  difficukty?: Difficulty
+  type?: ExerciseType | null
+  muscle?: Muscle | null
+  difficukty?: Difficulty | null
 }
