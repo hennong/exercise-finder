@@ -1,5 +1,5 @@
 import axios from "axios"
-import { XRapidAPIKey } from "../../Key"
+import { XRapidAPIKey } from "../Key"
 import { Exercise } from "../Types/Exercise/Exercise"
 import {
   ExerciseParameters,
