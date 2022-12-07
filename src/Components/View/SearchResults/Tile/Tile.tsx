@@ -1,7 +1,7 @@
-import { getExerciseTypeName, getMuscleName } from '../../../Helper/NameHelper'
-import { exerciseActions } from '../../../Store/State/ExerciseState'
-import { useDispatch } from '../../../Store/Store'
-import { Exercise } from '../../../Types/Exercise/Exercise'
+import { getExerciseTypeName, getMuscleName } from '../../../../Helper/NameHelper'
+import { exerciseActions } from '../../../../Store/State/ExerciseState'
+import { useDispatch } from '../../../../Store/Store'
+import { Exercise } from '../../../../Types/Exercise/Exercise'
 import './Tile.scss'
 export interface ITile {
   exercise: Exercise
