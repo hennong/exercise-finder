@@ -1,11 +1,11 @@
-import { useCallback } from "react"
-import { searchActions } from "../../Store/State/SearchState"
-import { useDispatch, useSelector } from "../../Store/Store"
-import { FilterButton } from "./Filters/FilterButton"
-import { Filters } from "./Filters/Filters"
-import { Icon } from "./Icon/Icon"
-import "./NavigationBar.scss"
-import { SearchBar } from "./SearchBar/Searchbar"
+import { useCallback } from 'react'
+import { searchActions } from '../../Store/State/SearchState'
+import { useDispatch, useSelector } from '../../Store/Store'
+import { FilterButton } from './Filters/FilterButton'
+import { Filters } from './Filters/Filters'
+import { Icon } from './Icon/Icon'
+import './NavigationBar.scss'
+import { SearchBar } from './SearchBar/Searchbar'
 
 export const NavigationBar: React.FC = () => {
   const showFilters = useSelector((state) => state.search.showFilters)
@@ -20,11 +20,12 @@ export const NavigationBar: React.FC = () => {
         dispatch(searchActions.setShowFilters(false))
       }
     })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
-    <div className="NavbarBaselayer" onBlur={handleBlur}>
-      <div className="Items">
+    <div className='NavbarBaselayer' onBlur={handleBlur}>
+      <div className='Items'>
         <Icon />
         <SearchBar />
         <FilterButton />

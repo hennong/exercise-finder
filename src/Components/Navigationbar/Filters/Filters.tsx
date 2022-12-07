@@ -1,19 +1,14 @@
-import { searchActions } from "../../../Store/State/SearchState"
-import { useDispatch, useSelector } from "../../../Store/Store"
-import { difficulties, Difficulty } from "../../../Types/Exercise/Difficulty"
-import { ExerciseFilter } from "../../../Types/Exercise/Exercise"
-import {
-  ExerciseType,
-  exerciseTypes
-} from "../../../Types/Exercise/ExerciseType"
-import { Muscle, muscles } from "../../../Types/Exercise/Muscle"
-import "./Filters.scss"
-import { FiltersButton } from "./FiltersButton/FiltersButton"
+import { searchActions } from '../../../Store/State/SearchState'
+import { useDispatch, useSelector } from '../../../Store/Store'
+import { difficulties, Difficulty } from '../../../Types/Exercise/Difficulty'
+import { ExerciseFilter } from '../../../Types/Exercise/Exercise'
+import { ExerciseType, exerciseTypes } from '../../../Types/Exercise/ExerciseType'
+import { Muscle, muscles } from '../../../Types/Exercise/Muscle'
+import './Filters.scss'
+import { FiltersButton } from './FiltersButton/FiltersButton'
 
 export const Filters = () => {
-  const { exerciseType, muscle, difficulty } = useSelector(
-    (state) => state.search?.parameter
-  )
+  const { exerciseType, muscle, difficulty } = useSelector((state) => state.search?.parameter)
 
   const dispatch = useDispatch()
 
@@ -50,11 +45,11 @@ export const Filters = () => {
   }
 
   return (
-    <div className="FiltersBackground">
-      <div className="FiltersButtonRow">
+    <div className='FiltersBackground'>
+      <div className='FiltersButtonRow'>
         {exerciseTypes.map((exerciseType) => {
           return (
-            <div className="FiltersSingleButton" key={exerciseType}>
+            <div className='FiltersSingleButton' key={exerciseType}>
               <FiltersButton
                 filter={exerciseType}
                 isActive={isFilterActive(exerciseType)}
@@ -64,28 +59,20 @@ export const Filters = () => {
           )
         })}
       </div>
-      <div className="FiltersButtonRow">
+      <div className='FiltersButtonRow'>
         {muscles.map((muscle) => {
           return (
-            <div className="FiltersSingleButton" key={muscle}>
-              <FiltersButton
-                filter={muscle}
-                isActive={isFilterActive(muscle)}
-                setParameter={setParameter}
-              />
+            <div className='FiltersSingleButton' key={muscle}>
+              <FiltersButton filter={muscle} isActive={isFilterActive(muscle)} setParameter={setParameter} />
             </div>
           )
         })}
       </div>
-      <div className="FiltersButtonRow">
+      <div className='FiltersButtonRow'>
         {difficulties.map((difficulty) => {
           return (
-            <div className="FiltersSingleButton" key={difficulty}>
-              <FiltersButton
-                filter={difficulty}
-                isActive={isFilterActive(difficulty)}
-                setParameter={setParameter}
-              />
+            <div className='FiltersSingleButton' key={difficulty}>
+              <FiltersButton filter={difficulty} isActive={isFilterActive(difficulty)} setParameter={setParameter} />
             </div>
           )
         })}

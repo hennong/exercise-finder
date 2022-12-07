@@ -1,12 +1,8 @@
-import { Action, combineReducers, configureStore } from "@reduxjs/toolkit"
-import {
-  TypedUseSelectorHook,
-  useDispatch as reduxUseDispatch,
-  useSelector as reduxUseSelector
-} from "react-redux"
-import { ThunkAction } from "redux-thunk"
-import { exerciseReducer } from "./State/ExerciseState"
-import { searchReducer } from "./State/SearchState"
+import { Action, combineReducers, configureStore } from '@reduxjs/toolkit'
+import { TypedUseSelectorHook, useDispatch as reduxUseDispatch, useSelector as reduxUseSelector } from 'react-redux'
+import { ThunkAction } from 'redux-thunk'
+import { exerciseReducer } from './State/ExerciseState'
+import { searchReducer } from './State/SearchState'
 
 export const store = configureStore({
   reducer: combineReducers({

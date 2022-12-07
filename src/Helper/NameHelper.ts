@@ -1,78 +1,78 @@
-import { Difficulty } from "../Types/Exercise/Difficulty"
-import { ExerciseFilter } from "../Types/Exercise/Exercise"
-import { ExerciseType } from "../Types/Exercise/ExerciseType"
-import { Muscle } from "../Types/Exercise/Muscle"
+import { Difficulty } from '../Types/Exercise/Difficulty'
+import { ExerciseFilter } from '../Types/Exercise/Exercise'
+import { ExerciseType } from '../Types/Exercise/ExerciseType'
+import { Muscle } from '../Types/Exercise/Muscle'
 
 export const getExerciseTypeName = (name: ExerciseType) => {
   switch (name) {
     case ExerciseType.Cardio:
-      return "Cardio"
+      return 'Cardio'
     case ExerciseType.OlympicWeightlifting:
-      return "Olympic Weightlifting"
+      return 'Olympic Weightlifting'
     case ExerciseType.Plyometrics:
-      return "Plyometrics"
+      return 'Plyometrics'
     case ExerciseType.Powerlifting:
-      return "Powerlifting"
+      return 'Powerlifting'
     case ExerciseType.Strength:
-      return "Strength"
+      return 'Strength'
     case ExerciseType.Stretching:
-      return "Stretching"
+      return 'Stretching'
     case ExerciseType.Strongman:
-      return "Strongman"
+      return 'Strongman'
     default:
-      return "no specific type"
+      return 'no specific type'
   }
 }
 
 export const getMuscleName = (name: Muscle) => {
   switch (name) {
     case Muscle.Abdominals:
-      return "Abdominals"
+      return 'Abdominals'
     case Muscle.Abductors:
-      return "Abductors"
+      return 'Abductors'
     case Muscle.Adductors:
-      return "Adductors"
+      return 'Adductors'
     case Muscle.Biceps:
-      return "Biceps"
+      return 'Biceps'
     case Muscle.Calves:
-      return "Calves"
+      return 'Calves'
     case Muscle.Chest:
-      return "Chest"
+      return 'Chest'
     case Muscle.Forearms:
-      return "Forearms"
+      return 'Forearms'
     case Muscle.Glutes:
-      return "Glutes"
+      return 'Glutes'
     case Muscle.Hamstrings:
-      return "Hamstrings"
+      return 'Hamstrings'
     case Muscle.Lats:
-      return "Lats"
+      return 'Lats'
     case Muscle.LowerBack:
-      return "Lower Back"
+      return 'Lower Back'
     case Muscle.MiddleBack:
-      return "Middle Back"
+      return 'Middle Back'
     case Muscle.Neck:
-      return "Neck"
+      return 'Neck'
     case Muscle.Quadriceps:
-      return "Quadriceps"
+      return 'Quadriceps'
     case Muscle.Traps:
-      return "Traps"
+      return 'Traps'
     case Muscle.Triceps:
-      return "Triceps"
+      return 'Triceps'
     default:
-      return "no specific muscle"
+      return 'no specific muscle'
   }
 }
 
 export const getDifficultyName = (name: Difficulty) => {
   switch (name) {
     case Difficulty.Beginner:
-      return "Beginner"
+      return 'Beginner'
     case Difficulty.Intermediate:
-      return "Intermediate"
+      return 'Intermediate'
     case Difficulty.Expert:
-      return "Expert"
+      return 'Expert'
     default:
-      return "not rated difficulty"
+      return 'not rated difficulty'
   }
 }
 
