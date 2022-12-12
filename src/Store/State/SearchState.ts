@@ -8,6 +8,7 @@ interface SearchState {
   query: string
   parameter: ExerciseOptions
   showFilters: boolean
+  isSearchActive: boolean
 }
 
 const initialState: SearchState = {
@@ -17,7 +18,8 @@ const initialState: SearchState = {
     muscle: null,
     difficulty: null
   },
-  showFilters: false
+  showFilters: false,
+  isSearchActive: false
 }
 
 const searchSlice = createSlice({
@@ -38,6 +40,9 @@ const searchSlice = createSlice({
     },
     setShowFilters: (state: SearchState, action: PayloadAction<boolean>): void => {
       state.showFilters = action.payload
+    },
+    setIsSearchActive: (state: SearchState, action: PayloadAction<boolean>): void => {
+      state.isSearchActive = action.payload
     }
   }
 })

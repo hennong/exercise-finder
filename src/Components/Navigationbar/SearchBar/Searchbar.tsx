@@ -30,6 +30,7 @@ export const SearchBar: React.FC = () => {
     dispatch(getExercises())
     dispatch(exerciseActions.setExercise(null))
     dispatch(searchActions.setShowFilters(false))
+    dispatch(searchActions.setIsSearchActive(true))
   }
 
   return (
