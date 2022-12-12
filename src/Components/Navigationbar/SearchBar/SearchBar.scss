@@ -1,9 +1,6 @@
 $background-SearchBar: #5a5959;
-$primary-color: #e94560;
-$secondary-color: #184d8e;
 
 .SearchBarBackground {
-  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,12 +17,11 @@ $secondary-color: #184d8e;
   width: 1000px;
   padding-left: 5px;
   padding-right: 5px;
-  color: #ffffff;
 }
 
 .InputBase {
+  color: #ffffff;
   padding-left: 10px;
   padding-right: 10px;
   width: 950px;
-  color: #ffffff;
 }

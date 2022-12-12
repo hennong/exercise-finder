@@ -1,6 +1,6 @@
 import { useSelector } from '../../../Store/Store'
 import './SearchResults.scss'
-import { Tile } from './Tile'
+import { Tile } from './Tile/Tile'
 
 export const SearchResult = () => {
   const exercises = useSelector((state) => state.exercise.exercises)
