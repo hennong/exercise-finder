@@ -13,12 +13,18 @@ $primary-color: #e94560;
   border-color: $primary-color;
 }
 
-.FiltersButtonRow {
-  display: flex;
-  flex-direction: row;
+.FiltersCategory {
+  font-size: large;
+  font-weight: bold;
   padding: 5px;
 }
 
+.FiltersButtonRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .FiltersSingleButton {
-  padding-left: 5px;
+  padding: 5px;
 }

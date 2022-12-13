@@ -46,6 +46,7 @@ export const Filters = () => {
 
   return (
     <div className='FiltersBackground'>
+      <div className='FiltersCategory'>Exercise Type</div>
       <div className='FiltersButtonRow'>
         {exerciseTypes.map((exerciseType) => {
           return (
@@ -59,6 +60,7 @@ export const Filters = () => {
           )
         })}
       </div>
+      <div className='FiltersCategory'>Muslcegroup</div>
       <div className='FiltersButtonRow'>
         {muscles.map((muscle) => {
           return (
@@ -68,6 +70,7 @@ export const Filters = () => {
           )
         })}
       </div>
+      <div className='FiltersCategory'>Difficulty</div>
       <div className='FiltersButtonRow'>
         {difficulties.map((difficulty) => {
           return (
